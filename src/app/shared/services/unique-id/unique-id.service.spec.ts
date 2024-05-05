@@ -14,7 +14,7 @@ describe(UniqueIdService.name, () => {
     service = new UniqueIdService();
   });
 
-  // pega o nome da função testada testada
+  // pega o nome da função testada
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
     should generate id when called with prefix`, () => {
     const id = service.generateUniqueIdWithPrefix('app');
@@ -60,7 +60,6 @@ describe(UniqueIdService.name, () => {
     });
 });
 
-
   /*
 
   expect(true).toBeTrue(); // só funciona com tipos 'true' ou 'false' literais, os tipos primitivos
@@ -72,4 +71,5 @@ describe(UniqueIdService.name, () => {
 
   should ... when ...
   Alguma coisa SHOULD(deve) fazer algo WHEN(quando) essa condição estiver presente
+
   */
